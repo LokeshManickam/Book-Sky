@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Sky</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Books Sky</h1>
+    </div>
+
+    <!-- Book Container -->
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h3>by Robert T. Kiyosaki</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cum nobis accusamus odio earum.
+            </p>
+            <button onclick="deleteBook(this)">Delete</button>
+        </div>
+    </div>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay"></div>
+
+    <!-- Popup Box -->
+    <div class="popup-box">
+        <h2>Add New Book</h2>
+
+        <form id="add-book-form">
+            <input type="text" id="book-title" placeholder="Book Title" required>
+            <input type="text" id="book-author" placeholder="Author Name" required>
+            <textarea id="book-description" placeholder="Book Description" required></textarea>
+
+            <button type="submit" onclick="addBook(event)">Add Book</button>
+            <button type="button" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Add Book Button -->
+    <button class="add-book-btn" id="add-pop-button" onclick="openForm()">+</button>
+
+    <!-- JavaScript -->
+    <script src="/script.js"></script>
+
+</body>
+</html>
